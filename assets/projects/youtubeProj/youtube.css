@@ -1,0 +1,273 @@
+@font-face {
+    font-family: yt-font;
+    src: url(assets/fonts/youtube-sans-medium.ttf);
+}
+
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: yt-font;
+    font-size: 20px;
+}
+
+body {
+    margin-top: 0;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5%, 1fr, 1fr;
+}
+
+nav,
+main,
+footer {
+    grid-column: span 12;
+}
+
+/*----------------------------------------------- NAVBAR -----------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+
+}
+.cast
+{
+    display: flex;
+    align-items: center;
+}
+.cast > div{
+    display: inline-block;
+}
+
+nav > div {
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 32px;
+    opacity: .4;
+}
+
+a {
+    text-decoration: none;
+    font-size: 32px;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+.yt-logo {
+    width: 150px;
+}
+
+.yt-profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.yt-profile2 {
+    margin-left: 0px;
+}
+
+.yt-scs {
+    width: 30px;
+    margin-left: 40px;
+}
+
+
+
+/*----------------------------------------------- MAIN CSS -----------------------------------------------*/
+main
+{
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+.genres {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 150px 0px 50px 0px;
+}
+
+button {
+    border: 0;
+}
+
+.genre {
+    padding: 12px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 15px;
+}
+
+button[class="genre"]:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.genre:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/*  */
+
+.first-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+}
+.mixtape-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mixtape-grid > img
+{
+    width: 137px;
+}
+.img {
+    display: inline-block;
+}
+
+.info {
+    display: inline-block;
+}
+
+/*  */
+
+.music {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 0px 100px 0px;
+    padding: 0;
+}
+
+.cover-img {
+    border-radius: 10px;
+    width: 275px;
+}
+
+.title,.title-no-under {
+    font-size: 48px;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.opacity-half {
+    font-size: 25px;
+    opacity: .5;
+}
+
+.relisten-img-div {
+    padding-right: 20px;
+}
+
+.relisten-img {
+    width: 70px;
+}
+
+
+
+div[class="buttons"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-buttons1 {
+    font-size: 26px;
+    padding: 7px 19px 7px 16px;
+    border: 1px solid #ffffff3d;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+.nav-buttons2 {
+    font-size: 26px;
+    padding: 7px 16px 7px 19px;
+    border: 1px solid #ffffff3d;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
+.nav-buttons3 {
+    font-size: 24px;
+    padding: 10px 15px;
+    border: 1px solid #ffffff3d;
+    border-radius: 30px;
+    margin: 0px 0px 0px 5px;
+}
+
+.nav-buttons1:hover,
+.nav-buttons2:hover,
+.nav-buttons3:hover {
+    background-color: #ffffff3d;
+}
+
+/*----------------------------------------------- GRID CSS -----------------------------------------------*/
+
+
+.quick-play-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.quick-play-grid > div
+{
+    display: flex;
+}
+.grid-img-thumb
+{
+    width: 75px;
+}
+.grid-text-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 8px 20px;
+}
+.text-light
+{
+    opacity: .4;
+}
+div[class="grid-text-info"], div[class="font-light"]
+{
+    font-size: 40px;
+}
+
+
